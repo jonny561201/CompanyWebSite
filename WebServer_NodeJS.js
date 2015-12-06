@@ -27,6 +27,13 @@ dispatcher.onGet("/", function(req, res){
 	res.end();
 });
 
+dispatcher.onGet("/index.css", function(req, res){
+	var cssPage = fs.readFileSync('./index.css');
+	res.writeHead(200, {'Content-Type': 'text/css'});
+	res.write(cssPage);
+	res.end();
+});
+
 dispatcher.onGet("/test", function(req, res){
 	res.writeHead(200, {'Content-Type': 'text/plain'});
 	res.end('sample');

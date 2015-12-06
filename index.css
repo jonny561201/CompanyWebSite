@@ -1,9 +1,13 @@
-title {
-	color: white;
+h1 {
+	color:white;
+	font-style: italic;
 }
-header {
-	background-color: #996633;
+#TopBanner {
+	background-color:#996633;
+	postion: fixed;
+	height: 100px;
+	top: 0;
 }
 body {
-	background-color: white;
+	background-color:white;
 }
