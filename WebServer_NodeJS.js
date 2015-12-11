@@ -34,13 +34,26 @@ dispatcher.onGet("/index.css", function(req, res){
 	res.end();
 });
 
-dispatcher.onGet("/test", function(req, res){
-	res.writeHead(200, {'Content-Type': 'text/plain'});
-	res.end('sample');
+dispatcher.onGet("/dropdown.js", function(req, res){
+	var jscript = fs.readFileSync('./dropdown.js');
+	res.writeHead(200, {'Content-Type': 'application/javascript'});
+	res.write(jscript);
+	res.end();
 });
 
-dispatcher.onGet("/image", function(req, res){
-	var background = fs.readFileSync('./Original.png');
-	res.writeHead(200, {'Content-Type': 'image/png'});
-	res.end(background, 'binary');
+// dispatcher.onGet("/test", function(req, res){
+// 	res.writeHead(200, {'Content-Type': 'text/plain'});
+// 	res.end('sample');
+// });
+
+dispatcher.onGet("/logo.jpg", function(req, res){
+	var logo = fs.readFileSync('./logo.jpg');
+	res.writeHead(200, {'Content-Type': 'image/jpg'});
+	res.end(logo, 'binary');
 })
+
+// dispatcher.onGet("/image", function(req, res){
+// 	var background = fs.readFileSync('./Original.png');
+// 	res.writeHead(200, {'Content-Type': 'image/png'});
+// 	res.end(background, 'binary');
+// })

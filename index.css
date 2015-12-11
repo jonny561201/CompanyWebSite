@@ -20,13 +20,13 @@ h1 {
 }
 #LinksBanner {
 	background-color: #33cc33;
-	background: linear-gradient(to right, #33cc33, #5cd65c, #ffffff); 
+	background: linear-gradient(to right, #000000, #196619, #1f7a1f, #248f24, #33cc33, #5cd65c, #85e085, #adebad, #ffffff); 
 	position: relative;
 	height: 17px;
 }
 header {
 	background-color: #996633;
-	background: linear-gradient(to right, #996633, #c68c53, #d2a679); 
+	background: linear-gradient(to right, #663300, #996633, #c68c53, #d2a679); 
 	postion: fixed;
 	padding-left: 10px;
 	height: 100px;
@@ -42,20 +42,23 @@ ul {
 	margin: 0;
 	padding:  0;
 }
-li {
+li.BannerList {
 	display: inline;
 	padding: 10px;
-}
-a {
 	color: white;
-	text-decoration: none;
 }
-li a:hover:not(.active) {
-    background-color: #111;
+li.AboutList {
+	color: black;
+	
+}
+
+/*li a:hover:not(.active) {
+    background-color: #66ccff;
 }
 li b:hover:not(.active) {
-    background-color: #111;
+    background-color: #66ccff;
 }
 li c:hover:not(.active) {
-    background-color: #111;
+    background-color: #66ccff;
 }
+*/
