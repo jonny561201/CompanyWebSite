@@ -9,5 +9,5 @@ $(function(){
 	$(document).click(function(){
 		$('.AboutDropDownWrapper').removeClass('active');
 	});
-	
+
 });

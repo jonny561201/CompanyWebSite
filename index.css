@@ -1,5 +1,5 @@
 h1 {
-	color:white;
+	color: white;
 	font-style: italic;
 }
 #LogoDiv {
@@ -22,7 +22,10 @@ h1 {
 	background-color: #33cc33;
 	background: linear-gradient(to right, #000000, #196619, #1f7a1f, #248f24, #33cc33, #5cd65c, #85e085, #adebad, #ffffff); 
 	position: relative;
-	height: 17px;
+	height: 22px;
+}
+#aboutButton {
+	background: linear-gradient(to right, #1f7a1f);
 }
 header {
 	background-color: #996633;
@@ -46,10 +49,6 @@ li.BannerList {
 	display: inline;
 	padding: 10px;
 	color: white;
-}
-li.AboutList {
-	color: black;
-	
 }
 
 /*li a:hover:not(.active) {

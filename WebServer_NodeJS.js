@@ -41,6 +41,20 @@ dispatcher.onGet("/dropdown.js", function(req, res){
 	res.end();
 });
 
+dispatcher.onGet("/js/jquery-1.11.0.min.js", function(req, res){
+	var jscript = fs.readFileSync('./js/jquery-1.11.0.min.js');
+	res.writeHead(200, {'Content-Type': 'application/javascript'});
+	res.write(jscript);
+	res.end();
+});
+
+dispatcher.onGet("/js/bootstrap.min.js", function(req, res){
+	var jscript = fs.readFileSync('./js/bootstrap.min.js');
+	res.writeHead(200, {'Content-Type': 'application/javascript'});
+	res.write(jscript);
+	res.end();
+});
+
 // dispatcher.onGet("/test", function(req, res){
 // 	res.writeHead(200, {'Content-Type': 'text/plain'});
 // 	res.end('sample');
