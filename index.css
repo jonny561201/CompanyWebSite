@@ -25,7 +25,22 @@ h1 {
 	height: 22px;
 }
 #aboutButton {
-	background: linear-gradient(to right, #1f7a1f);
+	background: linear-gradient(to right, #1f7a1f, #248f24);
+}
+#aboutDD {
+	background: linear-gradient(to right, #1f7a1f, #248f24);
+}
+#contactButton {
+	background: linear-gradient(to right, #0f3d0f, #1f7a1f);
+}
+#contactDD {
+	background: linear-gradient(to right, #0f3d0f, #1f7a1f);
+}
+#homeButton {
+	background: linear-gradient(to right, #000000, #145214);
+}
+#homeDD {
+	background: linear-gradient(to right, #000000, #1f7a1f);
 }
 header {
 	background-color: #996633;
@@ -45,19 +60,6 @@ ul {
 	margin: 0;
 	padding:  0;
 }
-li.BannerList {
-	display: inline;
-	padding: 10px;
-	color: white;
+.dropdown-menu>li>a {
+	color: #ffffff;
 }
-
-/*li a:hover:not(.active) {
-    background-color: #66ccff;
-}
-li b:hover:not(.active) {
-    background-color: #66ccff;
-}
-li c:hover:not(.active) {
-    background-color: #66ccff;
-}
-*/
