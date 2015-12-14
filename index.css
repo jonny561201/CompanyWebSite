@@ -9,19 +9,19 @@ h1 {
 	top: 20px;
 }
 #LogoImg {
-	position: absolute;
+	position: fixed;
 	height: 75px;
 	width: 75px;
 }
 #CompanyName {
-	postion: absolute;
+	position: relative;
 	padding-top: 10px;
 	padding-left: 85px;
 }
 #LinksBanner {
 	background-color: #33cc33;
 	background: linear-gradient(to right, #000000, #196619, #1f7a1f, #248f24, #33cc33, #5cd65c, #85e085, #adebad, #ffffff); 
-	position: relative;
+	position: static;
 	height: 22px;
 }
 #aboutButton {
@@ -34,10 +34,10 @@ h1 {
 	background: linear-gradient(to right, #0f3d0f, #1f7a1f);
 }
 #contactDD {
-	background: linear-gradient(to right, #0f3d0f, #1f7a1f);
+	background: linear-gradient(to right, #0a290a, #1f7a1f);
 }
 #homeButton {
-	background: linear-gradient(to right, #000000, #145214);
+	background: linear-gradient(to right, #000000, #0f3d0f);
 }
 #homeDD {
 	background: linear-gradient(to right, #000000, #1f7a1f);
@@ -45,12 +45,13 @@ h1 {
 header {
 	background-color: #996633;
 	background: linear-gradient(to right, #663300, #996633, #c68c53, #d2a679); 
-	postion: fixed;
+	position: static;
 	padding-left: 10px;
 	height: 100px;
+	width: 100%;
 }
 body {
-	background-color:white;
+	background-color: white;
 	margin: 0;
 	padding: 0;
 }
@@ -58,8 +59,19 @@ ul {
 	list-style-type: none;
 	position: fixed;
 	margin: 0;
-	padding:  0;
+	padding: 0;
 }
 .dropdown-menu>li>a {
 	color: #ffffff;
+}
+#backGround {
+	opacity: 0.5;
+}
+#Header {
+	position: fixed;
+	width: 100%;
+}
+#ImgBody {
+	position: absolute;
+	z-index: -1;
 }

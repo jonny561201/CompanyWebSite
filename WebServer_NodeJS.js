@@ -55,14 +55,15 @@ dispatcher.onGet("/js/bootstrap.min.js", function(req, res){
 	res.end();
 });
 
-// dispatcher.onGet("/test", function(req, res){
-// 	res.writeHead(200, {'Content-Type': 'text/plain'});
-// 	res.end('sample');
-// });
-
-dispatcher.onGet("/logo.jpg", function(req, res){
-	var logo = fs.readFileSync('./logo.jpg');
+dispatcher.onGet("/captain-america.jpg", function(req, res){
+	var logo = fs.readFileSync('./captain-america.jpg');
 	res.writeHead(200, {'Content-Type': 'image/jpg'});
+	res.end(logo, 'binary');
+})
+
+dispatcher.onGet("/logo.png", function(req, res){
+	var logo = fs.readFileSync('./logo.png');
+	res.writeHead(200, {'Content-Type': 'image/png'});
 	res.end(logo, 'binary');
 })
 
