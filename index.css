@@ -65,7 +65,7 @@ ul {
 	color: #ffffff;
 }
 #backGround {
-	opacity: 0.5;
+	opacity: 0.4;
 }
 #Header {
 	position: fixed;
@@ -74,4 +74,8 @@ ul {
 #ImgBody {
 	position: absolute;
 	z-index: -1;
+}
+#bannerBumper {
+	background-color: white;
+	height: 3px;
 }

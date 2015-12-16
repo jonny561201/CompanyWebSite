@@ -1,0 +1,32 @@
+Owner
+-----------
+
+
+(Picture above in rounded framing?)
+Jonathon Graf 
+CEO - Venture Capitalist
+
+
+How I got Started
+------------
+My name is Jon.  After graduating college with a Business/Marketing degree I decided to go into Finance.  After a little over seven years working for excel I decided I needed to shift gears and try a career in Software development.  It seems clear that, like most people, I did not know what I wanted.  It might seem like an odd transition, but in retrospect I think finance was the perfect segway into programming.  
+
+During my financial incarceration I found the thing I enjoyed the most process automation.  Many people dont realize that Excel has incorporated a great VBA api.  This provides a great learning tool to understand the basic programming constructs.  My roles allowed me to take this a step further and teach programmatic classes and work with external APIs.  This served to highlight one tragic flaw; I did not love my career.  
+
+Like various elements of this website I pulled myself up by my Bootstraps, and started studying new languages, and networking with many of the great members of Des Moines development community.  I currently work as a technical QA for an agronomic Corporation and use this as a opportunity to broaden my experience.
+
+
+What I am working on
+------------
+The Internet of Things (IOT) has brought about some amazingly big little revolutions.  The shrinking of technology both in terms of price paradoxically offset by increases in power have made programming more accessible and fun.  In my spare time I have played around with Raspberry Pi and used it to create a sump pump depth sensor and a garage door opener.  
+
+I have also performed a social experiment of sorts.  When I first started learning a more object oriented language I decided to create a calculator app using a scripted approach.  Once I was more comfortable and confident with concepts such as Test Drive Development (TDD) and OOP I test drove another calculator to see how this fundamentally changed my architecture.
+
+I have also been dabbling around in web development (this site) and played around with Java, Cucumber, and Selenide to generate Integration Tests.  I like to think of myself as a man of many interests.
+
+-add link to github here?
+
+
+What you Should know
+-------------
+I have varied interests.  I love design, drawing, reading, cooking, eating, carpentry, construction, travel, architechture, music, and I am up for just about anything.
