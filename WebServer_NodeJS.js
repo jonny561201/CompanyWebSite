@@ -34,8 +34,15 @@ dispatcher.onGet("/index.css", function(req, res){
 	res.end();
 });
 
-dispatcher.onGet("/dropdown.js", function(req, res){
-	var jscript = fs.readFileSync('./dropdown.js');
+dispatcher.onGet("/Owner.txt", function(req, res){
+	var Owner = fs.readFileSync('./Owner.txt');
+	res.writeHead(200, {'Content-Type': 'text/plain'});
+	res.write(Owner);
+	res.end();
+});
+
+dispatcher.onGet("/loadOwner.js", function(req, res){
+	var jscript = fs.readFileSync('./loadOwner.js');
 	res.writeHead(200, {'Content-Type': 'application/javascript'});
 	res.write(jscript);
 	res.end();

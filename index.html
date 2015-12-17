@@ -38,7 +38,7 @@
 				</button>
 				<ul id="aboutDD" class="dropdown-menu">
 					<li><a href="#">history</a></li>
-					<li><a href="#">owner</a></li>
+					<li><a href="#" id="lesen" onclick="loadOwner()">owner</a></li>
 				</ul>
 			</div>
 		</ul>
@@ -46,8 +46,14 @@
 </div>
 <div id="ImgBody">
 	<img id="backGround" src="captain-america.jpg"></img>
+	<div id="test">
+		<h2 id="temp"></h2>
+		<p class="owner"></p>
+	</div>
 </div>
+
 	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="loadOwner.js"></script>
 	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
