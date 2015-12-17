@@ -83,7 +83,8 @@ ul {
 	z-index: 1;
 	position: absolute;
 	top: 15%;
-	left: 40%;
+	left: 10%;
+	right: 10%;
 }
 #temp {
 	text-align: center;
