@@ -62,7 +62,7 @@ dispatcher.onGet("/js/bootstrap.min.js", function(req, res){
 	res.end();
 });
 
-dispatcher.onGet("/captain-america.jpg", function(req, res){
+dispatcher.onGet("/captain-america.jpg", function(req , res){
 	var logo = fs.readFileSync('./captain-america.jpg');
 	res.writeHead(200, {'Content-Type': 'image/jpg'});
 	res.end(logo, 'binary');
@@ -72,6 +72,13 @@ dispatcher.onGet("/logo.png", function(req, res){
 	var logo = fs.readFileSync('./logo.png');
 	res.writeHead(200, {'Content-Type': 'image/png'});
 	res.end(logo, 'binary');
+})
+
+dispatcher.onGet("/OwnerJson.json", function(req, res){
+	var json = fs.readFileSync('./OwnerJson.json');
+	res.writeHead(200, {'Content-Type': 'application/json'});
+	res.write(json);
+	res.end();
 })
 
 // dispatcher.onGet("/image", function(req, res){
