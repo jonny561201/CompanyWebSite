@@ -5,7 +5,7 @@ function loadOwner() {
             url : "Owner.txt",
             dataType: "text",
             success : function (data) {
-                $(".owner").html(data);
+                $("#owner").html(data);
             }
         });
 	}); 
@@ -19,9 +19,8 @@ function loadOwnerJSON() {
             url: "OwnerJson.json",
             dataType:'json',
             success:function(response) {
-                $('#history').html(response.OwnerPage.firstHeader );
-                // $('#result2').html(response.second );
-                // $('#result3').html(response.third);
+                $('#header1').html(response.OwnerPage.firstHeader);
+                $('#paragraph1').html(response.OwnerPage.firstParagraph);
             }
         });
 	}); 
