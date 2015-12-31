@@ -82,17 +82,22 @@ ul {
 	background-color: white;
 	height: 3px;
 }
+#content-scroll-wrap {
+	height: 100%;
+}
 #test {
 	z-index: 1;
 	position: absolute;
 	top: 15%;
-	left: 10%;
-	right: 10%;
+	left: 0%;
+	right: 0%;
+	bottom: 0%;
+	overflow: auto;
 }
 .temp {
 	text-align: center;
 	margin: auto;
-	width: 90%;
+	width: 80%;
 	top: 40%;
 }
 .headers {
