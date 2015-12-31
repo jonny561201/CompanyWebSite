@@ -91,6 +91,13 @@ ul {
 }
 .temp {
 	text-align: center;
+	margin: auto;
+	width: 90%;
 	top: 40%;
-	left: 40%;
+}
+.headers {
+	text-align: center;
+	top: 40%;
+	text-decoration: underline;
+	padding-top: 5px;
 }
