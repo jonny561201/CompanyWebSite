@@ -62,24 +62,30 @@ dispatcher.onGet("/js/bootstrap.min.js", function(req, res){
 	res.end();
 });
 
-dispatcher.onGet("/captain-america.jpg", function(req , res){
-	var logo = fs.readFileSync('./captain-america.jpg');
+dispatcher.onGet("/Sky-Blue-Sky.jpg", function(req , res){
+	var backImg = fs.readFileSync('./Sky-Blue-Sky.jpg');
 	res.writeHead(200, {'Content-Type': 'image/jpg'});
-	res.end(logo, 'binary');
-})
+	res.end(backImg, 'binary');
+});
+
+dispatcher.onGet("/lineBreaks.png", function(req , res){
+	var backImg = fs.readFileSync('./lineBreaks.png');
+	res.writeHead(200, {'Content-Type': 'image/png'});
+	res.end(backImg, 'binary');
+});
 
 dispatcher.onGet("/logo.png", function(req, res){
 	var logo = fs.readFileSync('./logo.png');
 	res.writeHead(200, {'Content-Type': 'image/png'});
 	res.end(logo, 'binary');
-})
+});
 
 dispatcher.onGet("/OwnerJson.json", function(req, res){
 	var json = fs.readFileSync('./OwnerJson.json');
 	res.writeHead(200, {'Content-Type': 'application/json'});
 	res.write(json);
 	res.end();
-})
+});
 
 // dispatcher.onGet("/image", function(req, res){
 // 	var background = fs.readFileSync('./Original.png');
