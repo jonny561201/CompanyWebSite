@@ -37,9 +37,9 @@ function loadMailJSON() {
                 $('#paragraph4').html(response.Contact.fourthP1);
 
                 //remove elements
-                // $('#header2').detach();
-                // $('#header3').detach();
-                // $('#header4').detach();
+                $('#header2').css("margin","0px");
+                $('#header3').css("margin","0px");
+                $('#header4').css("margin","0px");
             }
         });
     }); 
