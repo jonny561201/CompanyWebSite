@@ -6,7 +6,9 @@
 	"secondHeader" : "What I am working on", 
 	"firstP2" : "The Internet of Things (IOT) has brought about some amazingly big little revolutions.  The shrinking of technology both in terms of price paradoxically offset by increases in power have made programming more accessible and fun.  In my spare time I have played around with Raspberry Pi and used it to create a sump pump depth sensor and a garage door opener. ",
 	"secondP2" : "I have also performed a social experiment of sorts.  When I first started learning a more object oriented language I decided to create a calculator app using a scripted approach.  Once I was more comfortable and confident with concepts such as Test Drive Development (TDD) and OOP I test drove another calculator to see how this fundamentally changed my architecture.",
-	"thirdP2" : "I have also been dabbling around in Web Development (this site) and played around with Java, Cucumber, and Selenide to generate Integration Tests.  I like to think of myself as a man of many interests."
+	"thirdP2" : "At the moment I have been dabbling around in Web Development (this site) and played around with Java, Cucumber, and Selenide to generate Integration Tests.  I like to think of myself as a man of many interests.",
+	"thirdHeader" : "What you Should know",
+	"firstP3" : "I have varied interests.  I love design, drawing, reading, cooking, eating, carpentry, construction, travel, architechture, music, and I am up for just about anything."
 	},
 "Contact" : {
 	"firstHeader" : "Contact Us",
@@ -17,6 +19,11 @@
 	"fourthP1" : "309.269.8678"
 	},
 "History" : {
+	"firstHeader" : "The Early Years",
+	"firstP1" : "Central Iowa has a thriving developer community with a large number of great User Groups indicative of a growing market.  The most notable dimension is that the need for quality craftsman was clearly in high demand.  In 2015 Soaring Leaf Solutions was established as an initial foray into providing technical solutions to software agencies.",
+	"secondHeader" : "The Middle Years",
+	"secondP2" :"As with all ventures there are initial growing pains.  The acquisition of talent should always be of the highest priority with all companies if they want to remain relevant.  Our goal has remained to develop a broader understanding of technologies available and the ways in which they can be used to solve the evolving needs of our customers.",
+	"thirdHeader" : "Heartofore known as Now",
 	"" : ""
 }
 }

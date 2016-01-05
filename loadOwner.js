@@ -17,6 +17,9 @@ function loadOwnerJSON() {
                 $('#paragraph4').html(response.OwnerPage.firstP2);
                 $('#paragraph5').html(response.OwnerPage.secondP2);
                 $('#paragraph6').html(response.OwnerPage.thirdP2);
+                $('#lineBreaks7').css("visibility","visible");
+                $('#header7').html(response.OwnerPage.thirdHeader);
+                $('#paragraph7').html(response.OwnerPage.firstP3);
             }
         });
 	}); 
@@ -68,16 +71,19 @@ function clearText() {
     $('#paragraph4').html("");
     $('#paragraph5').html("");
     $('#paragraph6').html("");
+    $('#paragraph7').html("");
     $('#lineBreaks1').css("visibility","hidden");
     $('#lineBreaks2').css("visibility","hidden");
     $('#lineBreaks3').css("visibility","hidden");
     $('#lineBreaks4').css("visibility","hidden");
     $('#lineBreaks5').css("visibility","hidden");
     $('#lineBreaks6').css("visibility","hidden");
+    $('#lineBreaks7').css("visibility","hidden");
     $('#header1').html("");
     $('#header2').html("");
     $('#header3').html("");
     $('#header4').html("");
     $('#header5').html("");
     $('#header6').html("");
+    $('#header7').html("");
 }
