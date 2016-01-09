@@ -5,6 +5,7 @@ function loadOwnerJSON() {
             url: "OwnerJson.json",
             dataType:'json',
             success:function(response) {
+                clearText();
                 $('#header1').html(response.OwnerPage.firstHeader);
                 $('#paragraph1').html(response.OwnerPage.firstP1);
                 // document.getElementById("lineBreaks").style.visibility="visible";
