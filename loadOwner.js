@@ -1,6 +1,5 @@
 
 function loadOwnerJSON() {
-
 	$(document).ready(function() {
         jQuery.ajax({
             url: "OwnerJson.json",
@@ -26,7 +25,7 @@ function loadOwnerJSON() {
 }
 
 function loadMailJSON() {
-        $(document).ready(function() {
+    $(document).ready(function() {
         jQuery.ajax({
             url: "OwnerJson.json",
             dataType:'json',
@@ -49,7 +48,7 @@ function loadMailJSON() {
 }
 
 function loadEmailJSON() {
-        $(document).ready(function() {
+    $(document).ready(function() {
         jQuery.ajax({
             url: "OwnerJson.json",
             dataType:'json',
@@ -62,6 +61,28 @@ function loadEmailJSON() {
             }
         });
     });
+}
+
+function loadHistoryJSON() {
+    $(document).ready(function()) {
+        jQuery.ajax({
+            url: "OwnerJson.json",
+            dataType: 'json',
+            success:function(response) {
+                clearText();
+                $('#header1').html(response.History.firstHeader);
+                $('#lineBreaks1').css("visibility","visible");
+                $('#paragraph1').html(response.History.firstP1);
+                $('#header2').html(response.History.secondHeader);
+                $('#lineBreaks2').css("visibility","visible");
+                $('#secondP1').html(response.History.secondP1);
+                $('#thirdHeader').html(response.History.header3);
+                $('#lineBreaks3').css("visibility","visible");
+                $('#thirdP1').html(response.History.thirdP1);
+            }
+        });
+    });
+
 }
 
 function clearText() {
