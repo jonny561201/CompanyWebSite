@@ -64,7 +64,7 @@ function loadEmailJSON() {
 }
 
 function loadHistoryJSON() {
-    $(document).ready(function()) {
+    $(document).ready(function() {
         jQuery.ajax({
             url: "OwnerJson.json",
             dataType: 'json',
@@ -75,14 +75,13 @@ function loadHistoryJSON() {
                 $('#paragraph1').html(response.History.firstP1);
                 $('#header2').html(response.History.secondHeader);
                 $('#lineBreaks2').css("visibility","visible");
-                $('#secondP1').html(response.History.secondP1);
-                $('#thirdHeader').html(response.History.header3);
+                $('#paragraph2').html(response.History.firstP2);
+                $('#header3').html(response.History.thirdHeader);
                 $('#lineBreaks3').css("visibility","visible");
-                $('#thirdP1').html(response.History.thirdP1);
+                $('#paragraph3').html(response.History.firstP3);
             }
         });
     });
-
 }
 
 function clearText() {
