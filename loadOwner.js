@@ -127,8 +127,9 @@ function loadHistoryJSON() {
 }
 
 function insertImage(imgSrc) {
-    var insertElement = $("<img></img>").attr('src',imgSrc);
+    var insertElement = $("<img></img>").attr({src: imgSrc, id: 'CEOpic'});
     $('#header1').before(insertElement);
+    $('#CEOpic').css({height: "150px", transform: "translate(250%, 25%)"});
 }
 
 function clearText() {
