@@ -6,6 +6,7 @@ function loadOwnerJSON() {
             dataType:'json',
             success:function(response) {
                 clearText();
+                insertImage('CEO-Photo.png');
                 $('#header1').html(response.OwnerPage.firstHeader);
                 $('#paragraph1').html(response.OwnerPage.firstP1);
                 // document.getElementById("lineBreaks").style.visibility="visible";
@@ -88,6 +89,7 @@ function loadEmailJSON() {
                 $('#paragraph1').html(response.Contact.firstP1);
                 $('#lineBreaks1').css("visibility","visible");
                 $('#paragraph2').html(response.Contact.firstP1Email);
+                $('#paragraph2').css("href","mailto:jongraf1@gmail.com?Subject=Soaring%20Leaf%20Solutions,%20LLC");
 
                 //remove elements
                 $('#header2').css("margin","0px");
@@ -122,6 +124,11 @@ function loadHistoryJSON() {
             }
         });
     });
+}
+
+function insertImage(imgSrc) {
+    var insertElement = $("<img></img>").attr('src',imgSrc);
+    $('#header1').before(insertElement);
 }
 
 function clearText() {

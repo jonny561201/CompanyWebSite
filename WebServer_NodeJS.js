@@ -80,6 +80,12 @@ dispatcher.onGet("/logo.png", function(req, res){
 	res.end(logo, 'binary');
 });
 
+dispatcher.onGet("/CEO-Photo.png", function(req, res){
+	var ceoImg = fs.readFileSync('./CEO-Photo.png');
+	res.writeHead(200, {'Content-Type': 'image/png'});
+	res.end(ceoImg, 'binary');
+});
+
 dispatcher.onGet("/OwnerJson.json", function(req, res){
 	var json = fs.readFileSync('./OwnerJson.json');
 	res.writeHead(200, {'Content-Type': 'application/json'});
