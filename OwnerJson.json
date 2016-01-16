@@ -12,7 +12,7 @@
 	},
 "Contact" : {
 	"firstHeader" : "Contact Us",
-	"firstP1Email" : "jongraf1@gmail.com",
+	"firstP1Email" : "<a href='mailto:jongraf1@gmail.com?Subject=Soaring%20Leaf%20Solutions'>jongraf1@gmail.com</a>",
 	"firstP1" : "Soaring Leaf Solutions, LLC",
 	"secondP1" : "1469 NW 107th Street",
 	"thirdP1" : "Clive, IA 50325",
