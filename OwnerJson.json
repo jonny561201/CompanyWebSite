@@ -8,7 +8,7 @@
 	"secondP2" : "I have also performed a social experiment of sorts.  When I first started learning a more object oriented language I decided to create a calculator app using a scripted approach.  Once I was more comfortable and confident with concepts such as Test Drive Development (TDD) and OOP I test drove another calculator to see how this fundamentally changed my architecture.",
 	"thirdP2" : "At the moment I have been dabbling around in Web Development (this site) and played around with Java, Cucumber, and Selenide to generate Integration Tests.  I like to think of myself as a man of many interests.",
 	"thirdHeader" : "What you Should know",
-	"firstP3" : "I have varied interests.  I love design, drawing, reading, cooking, eating, carpentry, construction, travel, architechture, music, and I am up for just about anything."
+	"firstP3" : "I have varied interests.  I love design, drawing, reading, cooking, eating, carpentry, construction, travel, architechture, music, and I am up for just about anything.  Check out my <a href='https://github.com/jonny561201'>GitHub</a> account."
 	},
 "Contact" : {
 	"firstHeader" : "Contact Us",
@@ -24,6 +24,6 @@
 	"secondHeader" : "The Middle Years",
 	"firstP2" :"As with all ventures there are initial growing pains.  The acquisition of talent should always be of the highest priority with all companies if they want to remain relevant.  Our goal has remained to develop a broader understanding of technologies available and the ways in which they can be used to solve the evolving needs of our customers.",
 	"thirdHeader" : "Heartofore known as Now",
-	"firstP3" : "Currently, I am employed through the staffing and agile coaching agency Lean Techniques.  Working alongside such smart and engaging individuals has provided many opportunities to further self development and participate in community chartiy events.  Each day provides new opportunities to learn and I look forward to meeting each new challenge."
+	"firstP3" : "Currently, I am employed through the staffing and agile coaching agency <a href='http://www.leantechniques.co/'>Lean TECHniques</a>.  Working alongside such smart and engaging individuals has provided many opportunities to further self development and participate in community chartiy events.  Each day provides new opportunities to learn and I look forward to meeting each new challenge."
 }
 }
