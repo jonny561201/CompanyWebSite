@@ -130,7 +130,8 @@ function insertImage(imgSrc) {
     if ($('#CEOpic').length == 0) {
         var insertElement = $("<img></img>").attr({src: imgSrc, id: 'CEOpic'});
         $('#header1').before(insertElement);
-        $('#CEOpic').css({height: "150px", transform: "translate(250%, 25%)"});
+        $('#header1').css({"padding-top" : "3%"});
+        $('#CEOpic').css({height: "150px", display: "block", "margin-right" : "auto", "margin-left" : "auto", "margin-top" : "2%"});
     }
 }
 
@@ -149,6 +150,7 @@ function clearText() {
     $('#lineBreaks5').css("visibility","hidden");
     $('#lineBreaks6').css("visibility","hidden");
     $('#lineBreaks7').css("visibility","hidden");
+    $('#header1').css({"margin-top" : "10px", "padding-top" : "7%"}); 
     $('#header2').css("margin-top","10px");  
     $('#header2').css("margin-bottom","10px"); 
     $('#header3').css("margin-top","10px");  
