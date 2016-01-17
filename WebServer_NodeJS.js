@@ -86,6 +86,12 @@ dispatcher.onGet("/CEO-Photo.png", function(req, res){
 	res.end(ceoImg, 'binary');
 });
 
+dispatcher.onGet("/Condiment-Regular.otf", function(req, res){
+	var font = fs.readFileSync('./Condiment-Regular.otf');
+	res.writeHead(200, {'Content-Type': 'font/opentype'});
+	res.end(font, 'binary');
+});
+
 dispatcher.onGet("/OwnerJson.json", function(req, res){
 	var json = fs.readFileSync('./OwnerJson.json');
 	res.writeHead(200, {'Content-Type': 'application/json'});
