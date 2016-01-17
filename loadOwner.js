@@ -136,6 +136,9 @@ function insertImage(imgSrc) {
 }
 
 function clearText() {
+    if ($('#CEOpic').length != 0) {
+        $('#CEOpic').remove();
+    }
     $('#paragraph1').html("");
     $('#paragraph2').html("");
     $('#paragraph3').html("");
