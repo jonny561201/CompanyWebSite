@@ -129,8 +129,15 @@ function loadHistoryJSON() {
 function insertImage(imgSrc) {
     if ($('#CEOpic').length == 0) {
         var insertElement = $("<img></img>").attr({src: imgSrc, id: 'CEOpic'});
+        var insertName = $("<p>Jonathon M. Graf</p>").attr({id: 'CEOName'});
+        var insertTitle = $("<p>CEO - Venture Capitalist</p>").attr({id: 'CEOTitle'});      
+
         $('#header1').before(insertElement);
+        $('#header1').before(insertName);
+        $('#header1').before(insertTitle);
         $('#header1').css({"padding-top" : "3%"});
+        $('#CEOName').css({"text-align" : "center", "font-weight" : "bold", "font-size" : "115%", "padding-top" : "1%", "margin-bottom" : "5px"});
+        $('#CEOTitle').css({"text-align" : "center", "font-size" : "85%", "font-weight" : "bold", "color" : "gray"});
         $('#CEOpic').css({height: "150px", display: "block", "margin-right" : "auto", "margin-left" : "auto", "margin-top" : "2%"});
     }
 }
@@ -138,6 +145,8 @@ function insertImage(imgSrc) {
 function clearText() {
     if ($('#CEOpic').length != 0) {
         $('#CEOpic').remove();
+        $('#CEOName').remove();
+        $('#CEOTitle').remove();
     }
     $('#paragraph1').html("");
     $('#paragraph2').html("");
