@@ -139,7 +139,14 @@ function insertImage(imgSrc) {
         $('#CEOName').css({"text-align" : "center", "font-weight" : "bold", "font-size" : "115%", "padding-top" : "1%", "margin-bottom" : "5px"});
         $('#CEOTitle').css({"text-align" : "center", "font-size" : "85%", "font-weight" : "bold", "color" : "gray"});
         $('#CEOpic').css({height: "150px", display: "block", "margin-right" : "auto", "margin-left" : "auto", "margin-top" : "2%"});
+        socialMediaButtons();
     }
+}
+
+function socialMediaButtons() {
+    var insertList = $("<ul><li id='linkedin'><a href='https://www.linkedin.com/in/jon-graf-05725a6?trk=hp-identity-name'></a></li><li id='email'><a href='mailto:jongraf1@gmail.com?Subject=Soaring%20Leaf%20Solutions'></a></li><li id='github'><a href='https://github.com/jonny561201'></a></li></ul>");
+        
+    $('#header1').before(insertList);
 }
 
 function clearText() {

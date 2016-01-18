@@ -2,6 +2,7 @@ h1 {
 	color: white;
 	font-style: italic;
 	font-family: Condiment-Regular;
+	text-shadow: 1px 1px #4d4d4d;
 }
 #LogoDiv {
 	position: fixed;
@@ -97,7 +98,7 @@ ul {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	overflow: scroll;
+	overflow: auto;
 	background-color: #f2f2f2;
 	box-shadow: 10px 0px 10px #595959;
 }
