@@ -86,6 +86,12 @@ dispatcher.onGet("/CEO-Photo.png", function(req, res){
 	res.end(ceoImg, 'binary');
 });
 
+dispatcher.onGet("/linkedin_icon.png", function(req, res){
+	var linkedInImg = fs.readFileSync('./linkedin_icon.png');
+	res.writeHead(200, {'Content-Type': 'image/png'});
+	res.end(linkedInImg, 'binary');
+});
+
 dispatcher.onGet("/Condiment-Regular.otf", function(req, res){
 	var font = fs.readFileSync('./Condiment-Regular.otf');
 	res.writeHead(200, {'Content-Type': 'font/opentype'});
