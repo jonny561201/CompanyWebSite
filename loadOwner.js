@@ -144,14 +144,16 @@ function insertImage(imgSrc) {
 }
 
 function socialMediaButtons() {
-    var insertList = $("<div id='tester'><ul><li id='linkedin' class='socialMediaList'><a href='https://www.linkedin.com/in/jon-graf-05725a6?trk=hp-identity-name'>linkedin</a></li>" +
-        "<li id='email' class='socialMediaList'><a href='mailto:jongraf1@gmail.com?Subject=Soaring%20Leaf%20Solutions'>mail</a></li>" + 
-        "<li id='github' class='socialMediaList'><a href='https://github.com/jonny561201'>github</a></li></ul></div>");
+    var insertList = $("<div id='tester'><ul><li class='socialMediaList'><a id='linkedin' href='https://www.linkedin.com/in/jon-graf-05725a6?trk=hp-identity-name'></a></li>" +
+        "<li class='socialMediaList'><a id='email' href='mailto:jongraf1@gmail.com?Subject=Soaring%20Leaf%20Solutions'></a></li>" + 
+        "<li class='socialMediaList'><a id='github' href='https://github.com/jonny561201'></a></li></ul></div>");
 
     $('#header1').before(insertList);        
     $('.socialMediaList').css({"display" : "inline"});
-    $('#tester').css({"display" : "table", "margin-left" : "auto", "margin-right" : "auto"});
-    // $('#linkedin').css({"list-style-image" : "url('linkedin_icon.png')", "height" : "40px", "text-align" : "center"});
+    $('#tester').css({"display" : "table", "margin-left" : "auto", "margin-right" : "auto", "padding-top" : "5px", "padding-bottom" :"15px"});
+    $('#linkedin').css({"background" : "url('linkedin_icon.png')", "background-size" : "40px 40px", "display" : "inline-block", "width" : "40px", "height" : "40px"});
+    $('#email').css({"background" : "url('email_icon.png')", "background-size" : "40px 40px", "display" : "inline-block", "width" : "40px", "height" : "40px"});
+    $('#github').css({"background" : "url('github_icon.png')", "background-size" : "40px 40px", "display" : "inline-block", "width" : "40px", "height" : "40px"});
 }
 
 function clearText() {

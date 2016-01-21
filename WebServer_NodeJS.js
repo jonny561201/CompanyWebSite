@@ -92,6 +92,18 @@ dispatcher.onGet("/linkedin_icon.png", function(req, res){
 	res.end(linkedInImg, 'binary');
 });
 
+dispatcher.onGet("/email_icon.png", function(req, res){
+	var mailImg = fs.readFileSync('./email_icon.png');
+	res.writeHead(200, {'Content-Type': 'image/png'});
+	res.end(mailImg, 'binary');
+});
+
+dispatcher.onGet("/github_icon.png", function(req, res){
+	var githubImg = fs.readFileSync('./github_icon.png');
+	res.writeHead(200, {'Content-Type': 'image/png'});
+	res.end(githubImg, 'binary');
+});
+
 dispatcher.onGet("/Condiment-Regular.otf", function(req, res){
 	var font = fs.readFileSync('./Condiment-Regular.otf');
 	res.writeHead(200, {'Content-Type': 'font/opentype'});
