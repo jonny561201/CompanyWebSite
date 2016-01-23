@@ -33,8 +33,8 @@ function requestHandler(request, response){
 		}
 
 		var ext = path.extname(fileName);
-		
 		var isValidExtension = validExtensions[ext];
+		
 		var loadImage = fs.readFileSync("." + fileName);
 		response.writeHead(200, {"Content-Type":isValidExtension});
 		response.end(loadImage, 'binary');
