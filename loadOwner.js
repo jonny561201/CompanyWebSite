@@ -150,14 +150,15 @@ function socialMediaButtons() {
 
     $('#header1').before(insertList);        
     $('.socialMediaList').css({"display" : "inline"});
-    $('#tester').css({"display" : "table", "margin-left" : "auto", "margin-right" : "auto", "padding-top" : "5px", "padding-bottom" :"15px"});
-    $('#linkedin').css({"background" : "url('linkedin_icon.png')", "background-size" : "40px 40px", "display" : "inline-block", "width" : "40px", "height" : "40px"});
+    $('#tester').css({"margin-left" : "auto", "margin-right" : "auto", "padding-top" : "5px", "padding-bottom" :"25px", "width" : "125px", "height" : "43px"});
+    $('#linkedin').css({"background" : "url('linkedin_icon.png')", "background-size" : "43px 43px", "display" : "inline-block", "width" : "43px", "height" : "43px"});
     $('#email').css({"background" : "url('email_icon.png')", "background-size" : "40px 40px", "display" : "inline-block", "width" : "40px", "height" : "40px"});
     $('#github').css({"background" : "url('github_icon.png')", "background-size" : "40px 40px", "display" : "inline-block", "width" : "40px", "height" : "40px"});
 }
 
 function clearText() {
     if ($('#CEOpic').length != 0) {
+        $('#tester').remove();
         $('#CEOpic').remove();
         $('#CEOName').remove();
         $('#CEOTitle').remove();
