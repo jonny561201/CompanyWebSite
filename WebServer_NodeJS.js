@@ -14,7 +14,8 @@ var validExtensions = {
 	".otf":"font/opentype",
 	".css":"text/css",
 	".txt":"text/plain",
-	".json":"application/json"
+	".json":"application/json",
+	".ttf":"font/truetype"
 };
 
 dispatcher.setStatic('WebSite');
@@ -34,7 +35,7 @@ function requestHandler(request, response){
 
 		var ext = path.extname(fileName);
 		var isValidExtension = validExtensions[ext];
-		
+
 		var loadImage = fs.readFileSync("." + fileName);
 		response.writeHead(200, {"Content-Type":isValidExtension});
 		response.end(loadImage, 'binary');

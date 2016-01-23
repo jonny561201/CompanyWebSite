@@ -1,21 +1,15 @@
 h1 {
 	color: white;
 	font-style: italic;
-	font-family: Condiment-Regular;
+	font-family: Airstream;
 	text-shadow: 1px 1px #4d4d4d;
 	line-height: 25px;
+	font-size: 275%;
 	vertical-align: middle;
-}
-#LogoDiv {
-	position: fixed;
-	height: 75px;
-	width: 75px;
-	top: 20px;
 }
 #LogoImg {
 	position: fixed;
 	height: 75px;
-	width: 75px;
 }
 #CompanyName {
 	position: relative;
@@ -30,35 +24,45 @@ h1 {
 #LinksBanner {
 	background: linear-gradient(to right, #000000, #196619, #1f7a1f, #248f24, #33cc33, #5cd65c, #85e085, #adebad, #ffffff); 
 	position: static;
-	height: 30px;
+	height: 29px;
 }
 #aboutButton {
-	background: linear-gradient(to right, #1f7a1f, #248f24);
+	/*background: linear-gradient(to right, #1f7a1f, #248f24);*/
+	background: transparent;
+	border: none;
+	color: white;
 }
-#aboutDD {
-	background: linear-gradient(to right, #1f7a1f, #248f24);
+
+#historyButton {
+	/*background: linear-gradient(to right, #1f7a1f, #248f24);*/
+	background: transparent;
+	border: none;
+	color: white;
 }
+
 #contactButton {
-	background: linear-gradient(to right, #0f3d0f, #1f7a1f);
+	/*background: linear-gradient(to right, #0f3d0f, #1f7a1f);*/
+	background: transparent;
+	border: none;
+	color: white;
 }
-#contactDD {
-	background: linear-gradient(to right, #0a290a, #1f7a1f);
-}
+
 #homeButton {
-	background: linear-gradient(to right, #000000, #0f3d0f);
+	/*background: linear-gradient(to right, #000000, #0f3d0f);*/
+	background: transparent;
+	border: none;
+	color: white;
 }
-#homeDD {
-	background: linear-gradient(to right, #000000, #1f7a1f);
-}
+
 header {
 	background: linear-gradient(to right, #663300, #996633, #c68c53, #d2a679); 
 	position: static;
 	padding-left: 10px;
-	height: 80px;
+	height: 75px;
 	width: 100%;
 }
 body {
-	background-color: gray;
+	/*background-color: gray;*/
 	margin: 0;
 	padding: 0;
 	height: 100%;
@@ -72,7 +76,7 @@ ul {
 	color: #ffffff;
 }
 #backGround {
-	opacity: 0.2;
+	opacity: 0.4;
 	width: 100%;
 	height:  100%;
 	position: static;
@@ -91,7 +95,7 @@ ul {
 #test {
 	z-index: 1;
 	position: fixed;
-	top: 112px;
+	top: 107px;
 	width: 75%;
 	margin: auto;
 	left: 0;
@@ -99,7 +103,7 @@ ul {
 	bottom: 0;
 	overflow: auto;
 	background-color: #f2f2f2;
-	box-shadow: 10px 0px 10px #595959;
+	/*box-shadow: 10px 0px 10px #595959;*/
 }
 #header1 {
 	padding-top: 7%;
@@ -124,6 +128,6 @@ ul {
 	visibility: hidden;
 }
 @font-face {
-    font-family: Condiment-Regular;
-    src: url(Condiment-Regular.otf);
+    font-family: Airstream;
+    src: url(Airstream.ttf);
 }
