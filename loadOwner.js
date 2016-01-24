@@ -27,7 +27,26 @@ function loadOwnerJSON() {
 	}); 
 }
 
-function loadNewsJSON() {
+function loadEventsJSON() {
+    $(document).ready(function() {
+        jQuery.ajax({
+            url: "OwnerJson.json",
+            dataType:'json',
+            success:function(response) {
+                highlightButtons('#eventsButton');
+                clearText();
+                $('#header1').html(response.Home.firstHeader);
+                $('#paragraph1').html(response.Home.firstP1);
+                $('#paragraph2').html(response.Home.firstP2);
+                $('#paragraph3').html(response.Home.firstP3);
+                $('#paragraph4').html(response.Home.firstP4);
+                $('#lineBreaks1').css("visibility", "visible");
+            }
+        });
+    });
+}
+
+function loadHomeJSON() {
     $(document).ready(function() {
         jQuery.ajax({
             url: "OwnerJson.json",
@@ -54,12 +73,12 @@ function loadMailJSON() {
                 $('#lineBreaks1').css("visibility","visible");
                 $('#paragraph2').html(response.Contact.secondP1);
                 $('#paragraph3').html(response.Contact.thirdP1);
-                $('#paragraph4').html(response.Contact.fourthP1);
+                $('#paragraph4').html(response.Contact.firstP1Email);
+                $('#paragraph5').html(response.Contact.fourthP1);
 
                 //remove elements
                 $('#header2').css("margin","0px");
                 $('#header3').css("margin","0px");
-                $('#header4').css("margin","0px");
                 $('#header5').css("margin","0px");
                 $('#lineBreaks2').css("height","0px");
                 $('#lineBreaks3').css("height","0px");
