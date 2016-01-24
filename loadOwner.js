@@ -35,7 +35,7 @@ function loadNewsJSON() {
             success:function(response) {
                 highlightButtons('#homeButton');
                 clearText();
-                
+
             }
         });
     });
@@ -121,10 +121,10 @@ function socialMediaButtons() {
 
     $('#header1').before(insertList);        
     $('.socialMediaList').css({"display" : "inline"});
-    $('#tester').css({"margin-left" : "auto", "margin-right" : "auto", "padding-top" : "5px", "padding-bottom" :"25px", "width" : "125px", "height" : "43px"});
-    $('#linkedin').css({"background" : "url('linkedin_icon.png')", "background-size" : "43px 43px", "display" : "inline-block", "width" : "43px", "height" : "43px"});
-    $('#email').css({"background" : "url('email_icon.png')", "background-size" : "40px 40px", "display" : "inline-block", "width" : "40px", "height" : "40px"});
-    $('#github').css({"background" : "url('github_icon.png')", "background-size" : "40px 40px", "display" : "inline-block", "width" : "40px", "height" : "40px"});
+    $('#tester').css({"margin-left" : "auto", "margin-right" : "auto", "padding-top" : "5px", "padding-bottom" :"25px", "width" : "150px", "height" : "43px"});
+    $('#linkedin').css({"background" : "url('linkedin_icon2.png')", "background-size" : "40px 40px", "margin-right" : "5px", "margin-left" : "5px", "display" : "inline-block", "width" : "40px", "height" : "40px"});
+    $('#email').css({"background" : "url('email_icon.png')", "background-size" : "40px 40px", "display" : "inline-block", "margin-right" : "5px", "margin-left" : "5px", "width" : "40px", "height" : "40px"});
+    $('#github').css({"background" : "url('github_icon.png')", "background-size" : "40px 40px", "display" : "inline-block","margin-right" : "5px", "margin-left" : "5px", "width" : "40px", "height" : "40px"});
 }
 
 function clearText() {
@@ -138,6 +138,6 @@ function clearText() {
     $('.insesrtText').html("");
     $('.breaks').css({"visibility" : "hidden", "height" : "8px"});
     $('#header1').css({"margin-top" : "10px", "padding-top" : "7%"}); 
-    $().css({"margin-top" : "10px", "margin-bottom" : "10px"});
+    $('.headers').css({"margin-top" : "10px", "margin-bottom" : "10px"});
     $('.headers').html("");
 }

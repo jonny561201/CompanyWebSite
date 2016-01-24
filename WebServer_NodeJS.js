@@ -15,7 +15,8 @@ var validExtensions = {
 	".css":"text/css",
 	".txt":"text/plain",
 	".json":"application/json",
-	".ttf":"font/truetype"
+	".ttf":"application/font-sfnt",
+	".ico" : "image/x-icon"
 };
 
 dispatcher.setStatic('WebSite');
