@@ -17,11 +17,6 @@ function loadOwnerJSON() {
                 $('#header4').html(response.OwnerPage.secondHeader);
                 $('#lineBreaks4').css("visibility","visible");
                 $('#paragraph4').html(response.OwnerPage.firstP2);
-                $('#paragraph5').html(response.OwnerPage.secondP2);
-                $('#paragraph6').html(response.OwnerPage.thirdP2);
-                $('#lineBreaks7').css("visibility","visible");
-                $('#header7').html(response.OwnerPage.thirdHeader);
-                $('#paragraph7').html(response.OwnerPage.firstP3);
             }
         });
 	}); 
@@ -35,11 +30,11 @@ function loadEventsJSON() {
             success:function(response) {
                 highlightButtons('#eventsButton');
                 clearText();
-                $('#header1').html(response.Home.firstHeader);
-                $('#paragraph1').html(response.Home.firstP1);
-                $('#paragraph2').html(response.Home.firstP2);
-                $('#paragraph3').html(response.Home.firstP3);
-                $('#paragraph4').html(response.Home.firstP4);
+                $('#header1').html(response.Events.firstHeader);
+                $('#paragraph1').html(response.Events.firstP1);
+                $('#paragraph2').html(response.Events.firstP2);
+                $('#paragraph3').html(response.Events.firstP3);
+                $('#paragraph4').html(response.Events.firstP4);
                 $('#lineBreaks1').css("visibility", "visible");
             }
         });
@@ -54,7 +49,12 @@ function loadHomeJSON() {
             success:function(response) {
                 highlightButtons('#homeButton');
                 clearText();
-
+                homePicture();
+                $('#header1').html(response.Home.firstHeader);
+                $('#lineBreaks1').css("visibility","visible");
+                $('#paragraph1').html(response.Home.firstP1);
+                $('#paragraph2').html(response.Home.secondP1);
+                $('#paragraph3').html(response.Home.thirdP1);
             }
         });
     });
@@ -79,6 +79,7 @@ function loadMailJSON() {
                 //remove elements
                 $('#header2').css("margin","0px");
                 $('#header3').css("margin","0px");
+                $('#header4').css("margin","0px");
                 $('#header5').css("margin","0px");
                 $('#lineBreaks2').css("height","0px");
                 $('#lineBreaks3').css("height","0px");
@@ -109,6 +110,14 @@ function loadHistoryJSON() {
             }
         });
     });
+}
+
+function homePicture() {
+    var insertPicElement = "<div id='homeImg'><div id='homeMotto'>Watch How We Soar!</div></div>";
+    $('#header1').before(insertPicElement);
+    $('#homeImg').css({"margin-right":"40px", "margin-left" : "40px", "margin-top" : "10px", "height" : "300px", "background-size" : "300px", "background" : "url(Fall_Leaves.jpg)"});
+    $('#homeMotto').css({"color" : "white", "font-size" : "70px", "font-weight" : "500", "font-family" : "Airstream", "text-align" : "center", "line-height" : "300px"});
+    // $('#homePicture').css({"height" : "300px"});
 }
 
 function highlightButtons(buttonName) {
@@ -153,6 +162,9 @@ function clearText() {
         $('#CEOName').remove();
         $('#CEOTitle').remove();
         $('.socialMediaList').remove();
+    }
+    if($('#homeImg').length != 0) {
+        $('#homeImg').remove();
     }
     $('.insesrtText').html("");
     $('.breaks').css({"visibility" : "hidden", "height" : "8px"});
