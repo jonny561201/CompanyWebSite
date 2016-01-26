@@ -55,6 +55,16 @@ function loadHomeJSON() {
                 $('#paragraph1').html(response.Home.firstP1);
                 $('#paragraph2').html(response.Home.secondP1);
                 $('#paragraph3').html(response.Home.thirdP1);
+
+                //remove elements
+                $('#header2').css("margin","0px");
+                $('#header3').css("margin","0px");
+                $('#header4').css("margin","0px");
+                $('#header5').css("margin","0px");
+                $('#lineBreaks2').css("height","0px");
+                $('#lineBreaks3').css("height","0px");
+                $('#lineBreaks4').css("height","0px");
+                $('#lineBreaks5').css("height","0px");
             }
         });
     });
@@ -115,9 +125,8 @@ function loadHistoryJSON() {
 function homePicture() {
     var insertPicElement = "<div id='homeImg'><div id='homeMotto'>Watch How We Soar!</div></div>";
     $('#header1').before(insertPicElement);
-    $('#homeImg').css({"margin-right":"40px", "margin-left" : "40px", "margin-top" : "10px", "height" : "300px", "background-size" : "300px", "background" : "url(Fall_Leaves.jpg)"});
+    $('#homeImg').css({"margin-right":"20px", "margin-left" : "20px", "margin-top" : "10px", "height" : "300px", "background-size" : "300px", "background" : "url(Fall_Leaves.jpg)"});
     $('#homeMotto').css({"color" : "white", "font-size" : "70px", "font-weight" : "500", "font-family" : "Airstream", "text-align" : "center", "line-height" : "300px"});
-    // $('#homePicture').css({"height" : "300px"});
 }
 
 function highlightButtons(buttonName) {
@@ -150,7 +159,7 @@ function socialMediaButtons() {
     $('#header1').before(insertList);        
     $('.socialMediaList').css({"display" : "inline"});
     $('#tester').css({"margin-left" : "auto", "margin-right" : "auto", "padding-top" : "5px", "padding-bottom" :"25px", "width" : "150px", "height" : "43px"});
-    $('#linkedin').css({"background" : "url('linkedin_icon2.png')", "background-size" : "40px 40px", "margin-right" : "5px", "margin-left" : "5px", "display" : "inline-block", "width" : "40px", "height" : "40px"});
+    $('#linkedin').css({"background" : "url('linkedin_icon.png')", "background-size" : "40px 40px", "margin-right" : "5px", "margin-left" : "5px", "display" : "inline-block", "width" : "40px", "height" : "40px"});
     $('#email').css({"background" : "url('email_icon.png')", "background-size" : "40px 40px", "display" : "inline-block", "margin-right" : "5px", "margin-left" : "5px", "width" : "40px", "height" : "40px"});
     $('#github').css({"background" : "url('github_icon.png')", "background-size" : "40px 40px", "display" : "inline-block","margin-right" : "5px", "margin-left" : "5px", "width" : "40px", "height" : "40px"});
 }
