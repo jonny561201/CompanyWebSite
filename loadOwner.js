@@ -123,10 +123,10 @@ function loadHistoryJSON() {
 }
 
 function homePicture() {
-    var insertPicElement = "<div id='homeImg'><div id='homeMotto'>Watch How We Soar!</div></div>";
+    var insertPicElement = "<div id='homeImg'><div id='homeMotto'><p>Watch How We Soar!</p></div></div>";
     $('#header1').before(insertPicElement);
-    $('#homeImg').css({"margin-right":"20px", "margin-left" : "20px", "margin-top" : "10px", "height" : "300px", "background-size" : "300px", "background" : "url(Fall_Leaves.jpg)"});
-    $('#homeMotto').css({"color" : "white", "font-size" : "70px", "font-weight" : "500", "font-family" : "Airstream", "text-align" : "center", "line-height" : "300px"});
+    $('#homeImg').css({"margin-right":"20px", "margin-left" : "20px", "margin-top" : "10px", "height" : "300px", "background-size" : "300px", "background" : "url(Fall_Leaves.jpg)", "text-align" : "center"});
+    $('#homeMotto').css({"color" : "white", "font-size" : "70px", "font-weight" : "500", "font-family" : "Airstream", "padding-top" : "18%"});
 }
 
 function highlightButtons(buttonName) {

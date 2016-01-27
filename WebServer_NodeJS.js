@@ -15,7 +15,7 @@ var validExtensions = {
 	".css":"text/css",
 	".txt":"text/plain",
 	".json":"application/json",
-	".ttf":"application/font-sfnt",
+	".ttf":"font/ttf",
 	".ico" : "image/x-icon"
 };
 

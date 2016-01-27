@@ -24,7 +24,7 @@ h1 {
 #LinksBanner {
 	background: linear-gradient(to right, #000000, #196619, #1f7a1f, #248f24, #33cc33, #5cd65c, #85e085, #adebad, #ffffff); 
 	position: static;
-	height: 29px;
+	height: 28px;
 }
 #aboutButton {
 	/*background: linear-gradient(to right, #1f7a1f, #248f24);*/
@@ -142,5 +142,6 @@ ul {
 
 @font-face {
     font-family: Airstream;
-    src: url(Airstream.ttf);
+    src: url(AlexBrush-Regular.ttf);
 }
+/*consider using font sizes at 4vw or 4vh for width and height respective to the viewport instead of px*/
