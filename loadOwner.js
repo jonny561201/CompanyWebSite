@@ -29,6 +29,7 @@ function loadEventsJSON() {
             dataType:'json',
             success:function(response) {
                 highlightButtons('#eventsButton');
+                insertEventImages('dsmhack.png', 'KCDC.png', 'DNUG.png', 'Java.png');
                 clearText();
                 $('#header1').html(response.Events.firstHeader);
                 $('#paragraph1').html(response.Events.firstP1);
@@ -151,6 +152,27 @@ function insertImage(imgSrc) {
     }
 }
 
+function insertEventImages(eventImg1, eventImg2, eventImg3, eventImg4) {
+    if ($('#CEOpic').length == 0) {
+        var insertEvent1 = $("<img></img>").attr({src: eventImg1, id: 'Event1'});
+        var insertEvent2 = $("<img></img>").attr({src: eventImg2, id: 'Event2'});
+        var insertEvent3 = $("<img></img>").attr({src: eventImg3, id: 'Event3'});      
+        var insertEvent4 = $("<img></img>").attr({src: eventImg4, id: 'Event4'});      
+
+        $('#paragraph1').before(insertEvent1);
+        $('#paragraph2').before(insertEvent2);
+        $('#paragraph3').before(insertEvent3);
+        $('#paragraph4').before(insertEvent4);
+
+        // $('#header1').css({"padding-top" : "3%"});
+        $('#Event1').css({height: "150px", display: "block", "margin-right" : "auto", "margin-left" : "auto", "margin-top" : "2%"});
+        $('#Event2').css({height: "150px", display: "block", "margin-right" : "auto", "margin-left" : "auto", "margin-top" : "2%"});
+        $('#Event3').css({height: "150px", display: "block", "margin-right" : "auto", "margin-left" : "auto", "margin-top" : "2%"});
+        $('#Event4').css({height: "150px", display: "block", "margin-right" : "auto", "margin-left" : "auto", "margin-top" : "2%"});
+    }
+}
+
+
 function socialMediaButtons() {
     var insertList = $("<div id='tester'><ul><li class='socialMediaList'><a id='linkedin' href='https://www.linkedin.com/in/jon-graf-05725a6?trk=hp-identity-name'></a></li>" +
         "<li class='socialMediaList'><a id='email' href='mailto:jongraf1@gmail.com?Subject=Soaring%20Leaf%20Solutions'></a></li>" + 
@@ -174,6 +196,12 @@ function clearText() {
     }
     if($('#homeImg').length != 0) {
         $('#homeImg').remove();
+    }
+    if($('#Event1').length != 0) {
+        $('#Event1').remove();
+        $('#Event2').remove();
+        $('#Event3').remove();
+        $('#Event4').remove();
     }
     $('.insesrtText').html("");
     $('.breaks').css({"visibility" : "hidden", "height" : "8px"});
