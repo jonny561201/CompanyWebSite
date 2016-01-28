@@ -222,7 +222,7 @@ function clearText() {
     }
     $('.insesrtText').html("");
     $('.breaks').css({"visibility" : "hidden", "height" : "8px"});
-    $('#header1').css({"margin-top" : "10px", "padding-top" : "7%"}); 
+    $('#header1').css({"margin-top" : "10px", "padding-top" : "4%"}); 
     $('.headers').css({"margin-top" : "10px", "margin-bottom" : "10px"});
     $('.headers').html("");
 }
