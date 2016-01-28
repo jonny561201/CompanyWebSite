@@ -29,8 +29,8 @@ function loadEventsJSON() {
             dataType:'json',
             success:function(response) {
                 highlightButtons('#eventsButton');
-                insertEventImages('dsmhack.png', 'KCDC.png', 'DNUG.png', 'Java.png');
                 clearText();
+                insertEventImages('dsmhack.png', 'KCDC.png', 'DNUG.png', 'Java.png');
                 $('#header1').html(response.Events.firstHeader);
                 $('#paragraph1').html(response.Events.firstP1);
                 $('#paragraph2').html(response.Events.firstP2);
@@ -153,22 +153,35 @@ function insertImage(imgSrc) {
 }
 
 function insertEventImages(eventImg1, eventImg2, eventImg3, eventImg4) {
-    if ($('#CEOpic').length == 0) {
-        var insertEvent1 = $("<img></img>").attr({src: eventImg1, id: 'Event1'});
-        var insertEvent2 = $("<img></img>").attr({src: eventImg2, id: 'Event2'});
-        var insertEvent3 = $("<img></img>").attr({src: eventImg3, id: 'Event3'});      
-        var insertEvent4 = $("<img></img>").attr({src: eventImg4, id: 'Event4'});      
+    if ($('#Event1').length == 0) {
+        var insertEventImg1 = $("<img></img>").attr({src: eventImg1, id: 'EventImg1'});
+        var insertEventImg2 = $("<img></img>").attr({src: eventImg2, id: 'EventImg2'});
+        var insertEventImg3 = $("<img></img>").attr({src: eventImg3, id: 'EventImg3'});      
+        var insertEventImg4 = $("<img></img>").attr({src: eventImg4, id: 'EventImg4'});
 
-        $('#paragraph1').before(insertEvent1);
-        $('#paragraph2').before(insertEvent2);
-        $('#paragraph3').before(insertEvent3);
-        $('#paragraph4').before(insertEvent4);
+        var insertEventName1 = $("<p>DSM Hack</p>").attr({id: 'EventText1'});
+        var insertEventName2 = $("<p>KCDC</p>").attr({id: 'EventText2'});
+        var insertEventName3 = $("<p>IA .Net User Group</p>").attr({id: 'EventText3'});
+        var insertEventName4 = $("<p>CIJUG</p>").attr({id: 'EventText4'});
 
-        // $('#header1').css({"padding-top" : "3%"});
-        $('#Event1').css({height: "150px", display: "block", "margin-right" : "auto", "margin-left" : "auto", "margin-top" : "2%"});
-        $('#Event2').css({height: "150px", display: "block", "margin-right" : "auto", "margin-left" : "auto", "margin-top" : "2%"});
-        $('#Event3').css({height: "150px", display: "block", "margin-right" : "auto", "margin-left" : "auto", "margin-top" : "2%"});
-        $('#Event4').css({height: "150px", display: "block", "margin-right" : "auto", "margin-left" : "auto", "margin-top" : "2%"});
+        $('#paragraph1').before(insertEventImg1);
+        $('#paragraph2').before(insertEventImg2);
+        $('#paragraph3').before(insertEventImg3);
+        $('#paragraph4').before(insertEventImg4);
+
+        $('#paragraph1').before(insertEventName1);
+        $('#paragraph2').before(insertEventName2);
+        $('#paragraph3').before(insertEventName3);
+        $('#paragraph4').before(insertEventName4);
+
+        $('#EventImg1').css({height: "125px", display: "block", "margin-right" : "auto", "margin-left" : "auto", "margin-top" : "2%"});
+        $('#EventImg2').css({height: "125px", display: "block", "margin-right" : "auto", "margin-left" : "auto", "margin-top" : "2%"});
+        $('#EventImg3').css({height: "125px", display: "block", "margin-right" : "auto", "margin-left" : "auto", "margin-top" : "2%"});
+        $('#EventImg4').css({height: "125px", display: "block", "margin-right" : "auto", "margin-left" : "auto", "margin-top" : "2%"});
+        $('#EventText1').css({"text-align" : "center", "font-size" : "85%", "font-weight" : "bold", "color" : "gray"});
+        $('#EventText2').css({"text-align" : "center", "font-size" : "85%", "font-weight" : "bold", "color" : "gray"});
+        $('#EventText3').css({"text-align" : "center", "font-size" : "85%", "font-weight" : "bold", "color" : "gray"});
+        $('#EventText4').css({"text-align" : "center", "font-size" : "85%", "font-weight" : "bold", "color" : "gray"});
     }
 }
 
@@ -197,11 +210,15 @@ function clearText() {
     if($('#homeImg').length != 0) {
         $('#homeImg').remove();
     }
-    if($('#Event1').length != 0) {
-        $('#Event1').remove();
-        $('#Event2').remove();
-        $('#Event3').remove();
-        $('#Event4').remove();
+    if($('#EventImg1').length != 0) {
+        $('#EventImg1').remove();
+        $('#EventImg2').remove();
+        $('#EventImg3').remove();
+        $('#EventImg4').remove();
+        $('#EventText1').remove();
+        $('#EventText2').remove();
+        $('#EventText3').remove();
+        $('#EventText4').remove();
     }
     $('.insesrtText').html("");
     $('.breaks').css({"visibility" : "hidden", "height" : "8px"});
