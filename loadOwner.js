@@ -7,7 +7,7 @@ function loadOwnerJSON() {
             success:function(response) {
                 highlightButtons('#aboutButton');
                 clearText();
-                insertImage('CEO-Photo.png');
+                insertImage('Images/CEO-Photo.png');
                 $('#header1').html(response.OwnerPage.firstHeader);
                 $('#paragraph1').html(response.OwnerPage.firstP1);
                 // document.getElementById("lineBreaks").style.visibility="visible";
@@ -30,7 +30,7 @@ function loadEventsJSON() {
             success:function(response) {
                 highlightButtons('#eventsButton');
                 clearText();
-                insertEventImages('dsmhack.png', 'KCDC.png', 'DNUG.png', 'Java.png');
+                insertEventImages('Images/dsmhack.png', 'Images/KCDC.png', 'Images/DNUG.png', 'Images/Java.png');
                 $('#header1').html(response.Events.firstHeader);
                 $('#paragraph1').html(response.Events.firstP1);
                 $('#paragraph2').html(response.Events.firstP2);
@@ -126,7 +126,7 @@ function loadHistoryJSON() {
 function homePicture() {
     var insertPicElement = "<div id='homeImg'><div id='homeMotto'><p>Watch How We Soar!</p></div></div>";
     $('#header1').before(insertPicElement);
-    $('#homeImg').css({"margin-right":"20px", "margin-left" : "20px", "margin-top" : "10px", "height" : "300px", "background-size" : "300px", "background" : "url(Fall_Leaves.jpg)", "text-align" : "center"});
+    $('#homeImg').css({"margin-right":"20px", "margin-left" : "20px", "margin-top" : "10px", "height" : "300px", "background-size" : "300px", "background" : "url(Images/Fall_Leaves.jpg)", "text-align" : "center"});
     $('#homeMotto').css({"color" : "white", "font-size" : "70px", "font-weight" : "500", "font-family" : "Airstream", "padding-top" : "10%"});
 }
 
@@ -194,9 +194,9 @@ function socialMediaButtons() {
     $('#header1').before(insertList);        
     $('.socialMediaList').css({"display" : "inline"});
     $('#tester').css({"margin-left" : "auto", "margin-right" : "auto", "padding-top" : "5px", "padding-bottom" :"25px", "width" : "150px", "height" : "43px"});
-    $('#linkedin').css({"background" : "url('linkedin_icon.png')", "background-size" : "40px 40px", "margin-right" : "5px", "margin-left" : "5px", "display" : "inline-block", "width" : "40px", "height" : "40px"});
-    $('#email').css({"background" : "url('email_icon.png')", "background-size" : "40px 40px", "display" : "inline-block", "margin-right" : "5px", "margin-left" : "5px", "width" : "40px", "height" : "40px"});
-    $('#github').css({"background" : "url('github_icon.png')", "background-size" : "40px 40px", "display" : "inline-block","margin-right" : "5px", "margin-left" : "5px", "width" : "40px", "height" : "40px"});
+    $('#linkedin').css({"background" : "url('Images/linkedin_icon.png')", "background-size" : "40px 40px", "margin-right" : "5px", "margin-left" : "5px", "display" : "inline-block", "width" : "40px", "height" : "40px"});
+    $('#email').css({"background" : "url('Images/email_icon.png')", "background-size" : "40px 40px", "display" : "inline-block", "margin-right" : "5px", "margin-left" : "5px", "width" : "40px", "height" : "40px"});
+    $('#github').css({"background" : "url('Images/github_icon.png')", "background-size" : "40px 40px", "display" : "inline-block","margin-right" : "5px", "margin-left" : "5px", "width" : "40px", "height" : "40px"});
 }
 
 function clearText() {
