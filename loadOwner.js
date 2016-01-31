@@ -201,9 +201,9 @@ function insertEventImages(eventImg1, eventImg2, eventImg3, eventImg4) {
 
 
 function socialMediaButtons() {
-    var insertList = $("<div id='tester'><ul><li class='socialMediaList'><a id='linkedin' href='https://www.linkedin.com/in/jon-graf-05725a6?trk=hp-identity-name'></a></li>" +
+    var insertList = $("<div id='tester'><ul><li class='socialMediaList'><a id='linkedin' href='https://www.linkedin.com/in/jon-graf-05725a6?trk=hp-identity-name' target='_blank'></a></li>" +
         "<li class='socialMediaList'><a id='email' href='mailto:jongraf1@gmail.com?Subject=Soaring%20Leaf%20Solutions'></a></li>" + 
-        "<li class='socialMediaList'><a id='github' href='https://github.com/jonny561201'></a></li></ul></div>");
+        "<li class='socialMediaList'><a id='github' href='https://github.com/jonny561201' target='_blank'></a></li></ul></div>");
 
     $('#header1').before(insertList);        
     $('.socialMediaList').css({"display" : "inline"});
