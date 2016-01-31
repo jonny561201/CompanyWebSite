@@ -154,15 +154,20 @@ function insertImage(imgSrc) {
 
 function insertEventImages(eventImg1, eventImg2, eventImg3, eventImg4) {
     if ($('#Event1').length == 0) {
-        var insertEventImg1 = $("<img></img>").attr({src: eventImg1, id: 'EventImg1'});
-        var insertEventImg2 = $("<img></img>").attr({src: eventImg2, id: 'EventImg2'});
-        var insertEventImg3 = $("<img></img>").attr({src: eventImg3, id: 'EventImg3'});      
-        var insertEventImg4 = $("<img></img>").attr({src: eventImg4, id: 'EventImg4'});
+        var insertEventImg1 = $("<a href='http://dsmhack.org/default.html'></a>").attr({id: 'EventImg1'});
+        var insertEventImg2 = $("<a href ='http://www.kcdc.info/#!/'></a>").attr({id: 'EventImg2'});
+        var insertEventImg3 = $("<a href='http://iadnug.org/blog'></a>").attr({id: 'EventImg3'});      
+        var insertEventImg4 = $("<a href='http://cijug.net/'></a>").attr({id: 'EventImg4'});
 
         var insertEventName1 = $("<p>DSM Hack</p>").attr({id: 'EventText1'});
         var insertEventName2 = $("<p>KCDC</p>").attr({id: 'EventText2'});
         var insertEventName3 = $("<p>IA .Net User Group</p>").attr({id: 'EventText3'});
         var insertEventName4 = $("<p>CIJUG</p>").attr({id: 'EventText4'});
+
+        var insertEventDate1 = $("<p>March 3rd, 4th, 5th, 2016</p>").attr({id: 'EventDate1'});
+        var insertEventDate2 = $("<p>June 22nd, 23rd, 24th, 2016</p>").attr({id: 'EventDate2'});
+        var insertEventDate3 = $("<p>February 4th, 2016</p>").attr({id: 'EventDate3'});
+        var insertEventDate4 = $("<p>February 11th, 2016</p>").attr({id: 'EventDate4'});
 
         $('#paragraph1').before(insertEventImg1);
         $('#paragraph2').before(insertEventImg2);
@@ -174,14 +179,23 @@ function insertEventImages(eventImg1, eventImg2, eventImg3, eventImg4) {
         $('#paragraph3').before(insertEventName3);
         $('#paragraph4').before(insertEventName4);
 
-        $('#EventImg1').css({height: "125px", display: "block", "margin-right" : "auto", "margin-left" : "auto", "margin-top" : "2%"});
-        $('#EventImg2').css({height: "125px", display: "block", "margin-right" : "auto", "margin-left" : "auto", "margin-top" : "2%"});
-        $('#EventImg3').css({height: "125px", display: "block", "margin-right" : "auto", "margin-left" : "auto", "margin-top" : "2%"});
-        $('#EventImg4').css({height: "125px", display: "block", "margin-right" : "auto", "margin-left" : "auto", "margin-top" : "2%"});
-        $('#EventText1').css({"text-align" : "center", "font-size" : "85%", "font-weight" : "bold", "color" : "gray"});
-        $('#EventText2').css({"text-align" : "center", "font-size" : "85%", "font-weight" : "bold", "color" : "gray"});
-        $('#EventText3').css({"text-align" : "center", "font-size" : "85%", "font-weight" : "bold", "color" : "gray"});
-        $('#EventText4').css({"text-align" : "center", "font-size" : "85%", "font-weight" : "bold", "color" : "gray"});
+        $('#paragraph1').before(insertEventDate1);
+        $('#paragraph2').before(insertEventDate2);
+        $('#paragraph3').before(insertEventDate3);
+        $('#paragraph4').before(insertEventDate4);
+
+        $('#EventImg1').css({width: "125px", height: "125px", display: "block", "margin-right" : "auto", "margin-left" : "auto", "background" : "url(" + eventImg1 + "),", "background-size": "125px"});
+        $('#EventImg2').css({width: "125px", height: "125px", display: "block", "margin-right" : "auto", "margin-left" : "auto", "background" : "url(" + eventImg2 +")", "background-size": "125px"});
+        $('#EventImg3').css({width: "125px", height: "125px",display: "block", "margin-right" : "auto", "margin-left" : "auto", "background" : "url(" + eventImg3 + ")", "background-size": "125px", });
+        $('#EventImg4').css({width: "125px", height: "125px",display: "block", "margin-right" : "auto", "margin-left" : "auto", "background" : "url(" + eventImg4 + ")", "background-size": "125px"});
+        $('#EventText1').css({"text-align" : "center", "font-size" : "105%", "font-weight" : "bold", "margin-bottom" : "0"});
+        $('#EventText2').css({"text-align" : "center", "font-size" : "105%", "font-weight" : "bold", "margin-bottom" : "0"});
+        $('#EventText3').css({"text-align" : "center", "font-size" : "105%", "font-weight" : "bold", "margin-bottom" : "0"});
+        $('#EventText4').css({"text-align" : "center", "font-size" : "105%", "font-weight" : "bold", "margin-bottom" : "0"});
+        $('#EventDate1').css({"text-align" : "center", "font-size" : "100%", "font-weight" : "bold", "color" : "gray"});
+        $('#EventDate2').css({"text-align" : "center", "font-size" : "100%", "font-weight" : "bold", "color" : "gray"});
+        $('#EventDate3').css({"text-align" : "center", "font-size" : "100%", "font-weight" : "bold", "color" : "gray"});
+        $('#EventDate4').css({"text-align" : "center", "font-size" : "100%", "font-weight" : "bold", "color" : "gray"});
     }
 }
 
@@ -219,6 +233,10 @@ function clearText() {
         $('#EventText2').remove();
         $('#EventText3').remove();
         $('#EventText4').remove();
+        $('#EventDate1').remove();
+        $('#EventDate2').remove();
+        $('#EventDate3').remove();
+        $('#EventDate4').remove();
     }
     $('.insesrtText').html("");
     $('.breaks').css({"visibility" : "hidden", "height" : "8px"});
