@@ -154,10 +154,10 @@ function insertImage(imgSrc) {
 
 function insertEventImages(eventImg1, eventImg2, eventImg3, eventImg4) {
     if ($('#Event1').length == 0) {
-        var insertEventImg1 = $("<a href='http://dsmhack.org/default.html'></a>").attr({id: 'EventImg1'});
-        var insertEventImg2 = $("<a href ='http://www.kcdc.info/#!/'></a>").attr({id: 'EventImg2'});
-        var insertEventImg3 = $("<a href='http://iadnug.org/blog'></a>").attr({id: 'EventImg3'});      
-        var insertEventImg4 = $("<a href='http://cijug.net/'></a>").attr({id: 'EventImg4'});
+        var insertEventImg1 = $("<a href='http://dsmhack.org/default.html' target='_blank'></a>").attr({id: 'EventImg1'});
+        var insertEventImg2 = $("<a href ='http://www.kcdc.info/#!/' target='_blank'></a>").attr({id: 'EventImg2'});
+        var insertEventImg3 = $("<a href='http://iadnug.org/blog' target='_blank'></a>").attr({id: 'EventImg3'});      
+        var insertEventImg4 = $("<a href='http://cijug.net/' target='_blank'></a>").attr({id: 'EventImg4'});
 
         var insertEventName1 = $("<p>DSM Hack</p>").attr({id: 'EventText1'});
         var insertEventName2 = $("<p>KCDC</p>").attr({id: 'EventText2'});
