@@ -8,14 +8,18 @@ h1 {
 	vertical-align: middle;
 }
 #LogoImg {
-	position: fixed;
 	height: 90px;
 	padding-left: 5px;
 }
-#CompanyName {
-	position: relative;
-	padding-top: 10px;
-	padding-left: 85px;
+#LogoDiv {
+	color: white;
+	font-style: italic;
+	font-family: Airstream;
+	text-shadow: 1px 1px #4d4d4d;
+	line-height: 25px;
+	font-size: 325%;
+	vertical-align: middle;
+	margin-left: 10%;
 }
 #bannerBumper {
 	background-color: white;
