@@ -23,47 +23,44 @@ h1 {
 	height: 3px;
 }
 #LinksBanner {
-	background: linear-gradient(to right, #000000, #196619, #1f7a1f, #248f24, #33cc33, #5cd65c, #85e085, #adebad, #ffffff); 
+	background: #248f24;
+	/*background: linear-gradient(to right, #000000, #196619, #1f7a1f, #248f24, #33cc33, #5cd65c, #85e085, #adebad, #ffffff); */
 	position: static;
 	height: 28px;
 }
 #aboutButton {
-	/*background: linear-gradient(to right, #1f7a1f, #248f24);*/
 	background: transparent;
 	border: none;
 	color: white;
 }
 
 #historyButton {
-	/*background: linear-gradient(to right, #1f7a1f, #248f24);*/
 	background: transparent;
 	border: none;
 	color: white;
 }
 
 #contactButton {
-	/*background: linear-gradient(to right, #0f3d0f, #1f7a1f);*/
 	background: transparent;
 	border: none;
 	color: white;
 }
 
 #homeButton {
-	/*background: linear-gradient(to right, #000000, #0f3d0f);*/
 	background: transparent;
 	border: none;
 	color: white;
 }
 
 #eventsButton {
-	/*background: linear-gradient(to right, #000000, #0f3d0f);*/
 	background: transparent;
 	border: none;
 	color: white;
 }
 
 header {
-	background: linear-gradient(to right, #663300, #996633, #c68c53, #d2a679); 
+	background: #996633;
+	/*background: linear-gradient(to right, #663300, #996633, #c68c53, #d2a679); */
 	position: staticaboutButton	padding-left: 10px;
 	height: 90px;
 	width: 100%;
