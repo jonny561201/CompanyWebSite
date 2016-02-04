@@ -14,9 +14,9 @@ function loadOwnerJSON() {
                 $('#lineBreaks1').css("visibility","visible");
                 $('#paragraph2').html(response.OwnerPage.secondP1);
                 $('#paragraph3').html(response.OwnerPage.thirdP1);
-                $('#header4').html(response.OwnerPage.secondHeader);
-                $('#lineBreaks4').css("visibility","visible");
-                $('#paragraph4').html(response.OwnerPage.firstP2);
+                // $('#header4').html(response.OwnerPage.secondHeader);
+                // $('#lineBreaks4').css("visibility","visible");
+                // $('#paragraph4').html(response.OwnerPage.firstP2);
             }
         });
 	}); 

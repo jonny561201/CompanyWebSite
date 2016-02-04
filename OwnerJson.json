@@ -1,10 +1,8 @@
 {"OwnerPage" : {
-	"firstHeader" : "How I got Started", 
-	"firstP1" : "My name is Jon.  After graduating college with a Business/Marketing degree I decided to go into Finance.  After a little over seven years working for excel I decided I needed to shift gears and try a career in Software Development.  It seems clear that, like most people, I did not know what I wanted.  It might seem like an odd transition, but in retrospect I think finance was the perfect segway into programming.",
-	"secondP1" : "During my financial incarceration I found the thing I enjoyed the most process automation.  Many people dont realize that Excel has incorporated a great VBA api.  This provides a great learning tool to understand the basic programming constructs.  My roles allowed me to take this a step further and teach programmatic classes and work with external APIs.  This served to highlight one tragic flaw; I did not love my career.",
-	"thirdP1" : "Like various elements of this website I pulled myself up by my Bootstraps, and started studying new languages, and networking with many of the great members of Des Moines development community.  I currently work as a technical QA for an agronomic Corporation and use this as a opportunity to broaden my experience.",
-	"secondHeader" : "What you Should know",
-	"firstP2" : "I have varied interests.  I love design, drawing, reading, cooking, eating, carpentry, construction, travel, architechture, music, and I am up for just about anything."
+	"firstHeader" : "How I got started", 
+	"firstP1" : "After college I took a position in Finance. During that time I discovered the thing I enjoyed the most was process automation. Many people don’t realize that Excel has incorporated a great VBA API. This provides a great learning tool to understand basic programming constructs. My roles allowed me to take this a step further and teach programmatic classes and work with external APIs. This served to highlight one tragic flaw; I did not love my career in Finance.",
+	"secondP1" : "After a little over seven years working in Excel, I decided to shift towards a career in Software Development. It might seem like an odd transition, but in retrospect, I think Finance was the perfect segue into programming.  I started studying new languages while networking with many of the great members of the Des Moines development community. I currently work as a technical QA for an agronomic corporation and am using this as an opportunity to broaden my experience.",
+	"thirdP1" : "Like various elements of this website I pulled myself up by my Bootstraps, and started studying new languages, and networking with many of the great members of Des Moines development community.  I currently work as a technical QA for an agronomic Corporation and use this as a opportunity to broaden my experience."
 	},
 "Contact" : {
 	"firstHeader" : "Contact Us",
@@ -16,11 +14,11 @@
 	},
 "History" : {
 	"firstHeader" : "The Early Years",
-	"firstP1" : "Central Iowa has a thriving developer community with a large number of great User Groups indicative of a growing market.  The most notable dimension is that the need for quality craftsman was clearly in high demand.  In 2015 Soaring Leaf Solutions was established as an initial foray into providing technical solutions to software agencies.",
+	"firstP1" : "Central Iowa has a thriving developer community with a large number of great user groups indicative of a growing market. However, the need for quality craftsmanship is in especially high demand. In 2015, Soaring Leaf Solutions was established to help fill that niche providing technical software solutions.",
 	"secondHeader" : "The Middle Years",
-	"firstP2" :"As with all ventures there are initial growing pains.  The acquisition of talent should always be of the highest priority with all companies if they want to remain relevant.  Our goal has remained to develop a broader understanding of technologies available and the ways in which they can be used to solve the evolving needs of our customers.",
-	"thirdHeader" : "Heartofore known as Now",
-	"firstP3" : "Currently, I am employed through the staffing and agile coaching agency <a href='http://www.leantechniques.co/'>Lean TECHniques</a>.  Working alongside such smart and engaging individuals has provided many opportunities to further self development and participate in community chartiy events.  Each day provides new opportunities to learn and I look forward to meeting each new challenge."
+	"firstP2" :"As with all ventures, there are initial growing pains. The acquisition of new skill sets should always be of the highest priority in order to remain relevant. Our goal is to develop a broader understanding of technologies and the ways in which they can be used to solve the evolving needs of our customers.",
+	"thirdHeader" : "Heretofore known as Now",
+	"firstP3" : "Currently, we work with the staffing and Agile coaching agency Lean TECHniques. Working alongside such smart and engaging individuals has provided many opportunities to further self-development and participate in community charity events. Each day provides new opportunities to learn, and we look forward to meeting each new challenge."
 	},
 "Events" : {
 	"firstHeader" : "Upcoming Events",
@@ -31,8 +29,8 @@
 	},
 "Home" : {
 	"firstHeader" : "What we are working on",
-	"firstP1" : "The Internet of Things (IOT) has brought about some amazingly big little revolutions.  The shrinking of technology both in terms of price paradoxically offset by increases in power have made programming more accessible and fun.  In my spare time I have played around with Raspberry Pi and used it to create a sump pump depth sensor and a garage door opener. ",
-	"secondP1" : "I have also performed a social experiment of sorts.  When I first started learning a more object oriented language I decided to create a calculator app using a scripted approach.  Once I was more comfortable and confident with concepts such as Test Drive Development (TDD) and OOP I test drove another calculator to see how this fundamentally changed my architecture.",
-	"thirdP1" : "At the moment I have been dabbling around in Web Development (this site) and played around with Java, Cucumber, and Selenide to generate Integration Tests.  I like to think of myself as a man of many interests."
+	"firstP1" : "The Internet of Things (IOT) has brought about some amazingly big little revolutions. The shrinking of technology -- both in terms of price paradoxically offset by increases in power -- has made programming more accessible and fun. In my spare time, I have played around with Raspberry Pi and used it to create a sump pump depth sensor and a garage door opener.",
+	"secondP1" : "When I first started learning a more Object Oriented Programming (OOP) language I decided to create a calculator app using a scripted approach. Once I was more comfortable and confident with concepts such as Test Drive Development (TDD) and OOP, I created and test drove a second calculator to see how this fundamentally changed my architecture.",
+	"thirdP1" : "At the moment, I have been dabbling around in Web Development and played around with Java, Cucumber, and Selenium to generate Integration Tests. I like to think of myself as a man of many interests."
 	} 
 }
