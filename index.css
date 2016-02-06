@@ -7,7 +7,14 @@ h1 {
 	font-size: 275%;
 	vertical-align: middle;
 }
+#CompanyName {
+    position: relative;
+    padding-top: 10px;
+    padding-left: 85px;
+    margin-left: 13%;
+}
 #LogoImg {
+    position: fixed;
 	height: 90px;
 	padding-left: 5px;
 }
