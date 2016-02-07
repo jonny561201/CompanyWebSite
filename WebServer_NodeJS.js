@@ -41,6 +41,9 @@ function requestHandler(request, response){
 		response.writeHead(200, {"Content-Type":isValidExtension});
 		response.end(loadImage, 'binary');
 	} catch(err){
-		console.log(err);
+		console.log("Failed to find url: " + request.url);
+        response.writeHead(404,{"Context-Type":"text/plain"})
+		response.write("Error 404: Page not found!");
+		response.end();
 	}
 }
