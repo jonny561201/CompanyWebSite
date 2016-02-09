@@ -16,7 +16,6 @@ h1 {
 #LogoImg {
     position: fixed;
 	height: 90px;
-	padding-left: 5px;
 }
 #LogoDiv {
 	color: white;
@@ -26,7 +25,7 @@ h1 {
 	line-height: 25px;
 	font-size: 325%;
 	vertical-align: middle;
-	margin-left: 11%;
+	margin-left: 12.4%;
 }
 #bannerBumper {
 	background-color: white;
@@ -35,7 +34,7 @@ h1 {
 }
 #LinksBanner {
 	background: #248f24;
-	/*background: linear-gradient(to right, #000000, #196619, #1f7a1f, #248f24, #33cc33, #5cd65c, #85e085, #adebad, #ffffff); */
+    padding-left: 12.5%; 
 	position: static;
 	height: 28px;
 }
