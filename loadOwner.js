@@ -134,8 +134,8 @@ function highlightButtons(buttonName) {
 
 function insertImage(imgSrc) {
     if ($('#CEOpic').length == 0) {
-        var insertElement = $("<img></img>").attr({src: imgSrc, id: 'CEOpic'});
-        var insertName = $("<p>Jonathon M. Graf</p>").attr({id: 'CEOName'});
+        var insertElement = $("<img alt='Jonathon M. Graf image'></img>").attr({src: imgSrc, id: 'CEOpic'});
+        var insertName = $("<p alt='Jonathon M. Graf'>Jonathon M. Graf</p>").attr({id: 'CEOName'});
         var insertTitle = $("<p>CEO - Venture Capitalist</p>").attr({id: 'CEOTitle'});      
 
         $('#header1').before(insertElement);
