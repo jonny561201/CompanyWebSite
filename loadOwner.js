@@ -163,7 +163,7 @@ function insertEventImages(eventImg1, eventImg2, eventImg3, eventImg4) {
 
         var insertEventDate1 = $("<p>March 3rd, 4th, 5th, 2016</p>").attr({id: 'EventDate1'});
         var insertEventDate2 = $("<p>June 22nd, 23rd, 24th, 2016</p>").attr({id: 'EventDate2'});
-        var insertEventDate3 = $("<p>February 4th, 2016</p>").attr({id: 'EventDate3'});
+        var insertEventDate3 = $("<p>February 18th, 2016</p>").attr({id: 'EventDate3'});
         var insertEventDate4 = $("<p>February 11th, 2016</p>").attr({id: 'EventDate4'});
 
         $('#paragraph1').before(insertEventImg1);
