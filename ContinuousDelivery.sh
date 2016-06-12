@@ -19,5 +19,4 @@ elif [ $LOCAL = $BASE ]; then
 	taskkill -im node.exe -f
 	git pull -r
 	start C:/Users/Shippo/Desktop/StartWebServer.bat
-	read -n 1 -s
 fi
